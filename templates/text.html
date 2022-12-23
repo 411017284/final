@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>職涯測驗結果</title>
+
+	<style type="text/css">
+		* { 
+			font-family: "標楷體"; }
+
+		header { 
+			font-size: 36px;
+			color: purple; }
+
+		.col-lg-4 {
+			border: 1px solid; }
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<a class="navbar-brand" href="#">MENU</a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="#ucan">UCAN</a></li>
+			<li class="nav-item"><a class="nav-link" href="#system">職業性格類型</a></li>
+			<li class="nav-item"><a class="nav-link" href="#icon">歷次診斷結果比較</a></li>
+		</ul>
+	</div>
+	</nav>
+
+	<main class="container-fluid bg-dark text-white text-center">
+
+		<nav>
+			<h1><a href="https://ucan.moe.edu.tw/Account/Login.aspx" class="text-reset text-decoration-none text-white bg-danger" target="_blank" id="I">陳柔涵的職涯測驗結果</a></h1>
+		</nav>
+
+		<img src="https://www1.pu.edu.tw/~s1101728/2a/2.jpg" alt="照片" width="300" class="img-fluid rounded-circle" id="PICTURE"> 
+		<br><br><br>
+
+		<div class="row">
+			<session id="ucan" class="col-lg-4">
+				<header><a href="https://ucan.moe.edu.tw/Account/Login.aspx" class="text-reset text-purple bg-light">UCAN 16職涯測驗類型<br>診斷結果</header>
+				<img src="https://www1.pu.edu.tw/~s1101728/2a/UCAN.jpg" alt="照片" width="300">
+			</session>
+
+			<article id="system" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-light">職業性格類型</header> 
+				<img src="https://www1.pu.edu.tw/~s1101728/2a/UCAN1.jpg" alt="照片" width="300">
+			</article>
+			
+			<aside id="icon" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-light">歷次診斷結果比較</header>
+				<img src="https://www1.pu.edu.tw/~s1101728/2a/UCAN2.jpg" alt="照片" width="300">
+			</aside>
+		</div><br><br>
+		
+		<footer>
+			Copyright ©  陳柔涵. All Rights Reserved.
+		</footer>
+		
+	</main>
+</body>
+</html>
