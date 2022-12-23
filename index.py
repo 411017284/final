@@ -36,9 +36,9 @@ def webhook():
         result = ""
         info = ""
         for doc in docs:
-        dict = doc.to_dict()
-        if kind in dict["name"]:
-        result += "種類:" + dict["name"] + "\n"
-        result += "品項:" + dict["detail"] + "\n"
+            dict = doc.to_dict()
+            if kind in dict["name"]:
+                result += "種類:" + dict["name"] + "\n"
+                result += "品項:" + dict["detail"] + "\n"
         info += result + "\n"
         return make_response(jsonify({"fulfillmentText": info}))
