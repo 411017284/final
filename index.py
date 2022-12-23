@@ -39,6 +39,6 @@ def webhook():
         dict = doc.to_dict()
         if fange in dict["name"]:
             result += "種類:" + dict["name"] + "\n"
-            result += "品項:" + dict["dential"] + "\n"
+            result += "品項:" + dict["detail"] + "\n"
     info += result + "\n"
     return make_response(jsonify({"fulfillmentText": info}))
