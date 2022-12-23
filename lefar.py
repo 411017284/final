@@ -12,7 +12,7 @@ Data = requests.get(url)
 Data.encoding = "utf-8"
 sp = BeautifulSoup(Data.text, "html.parser")
 result=sp.select(".store_menu ul")
-#info = ""
+info = ""
 info = ""
 for item in result:
     name = item.find("div").text
@@ -21,7 +21,7 @@ for item in result:
     for d in drinks:
       detail+=d.find("p").text + ":"
       for p in d.select("em"):
-        detail += p.text + ";"
+        detail += p.text + "; "
       detail += "\n"
     #info += name + "\n" + detail + "\n"
 #print(info)
